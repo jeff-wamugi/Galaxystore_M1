@@ -10,7 +10,6 @@ export default function NewProduct() {
         ev.preventDefault();
         const data = {title,description,price};
         await axios.post('/api/products', data)
-
     }
     return (
         <Layout>
